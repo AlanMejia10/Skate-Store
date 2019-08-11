@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*START HEADER SECTION*/
+
+header{
+    position: relative;
+}
+
+.vid-intro{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -10;
+}
+
+.vid-header{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sub-navigation{
+    display: none;
+    z-index: 10;
+}
+
+.main-menu li:nth-child(2):hover .sub-navigation{
+    color:red;
+    display: block;
+}
+
+
+
+
+/*END HEADER SECTION*/
