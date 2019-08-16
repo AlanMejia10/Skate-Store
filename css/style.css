@@ -44,6 +44,10 @@ li{
     66%{
         border-color: rgb(240, 240, 44);
     }
+
+    100%{
+        border-color: rgb(248, 69, 3);
+    }
 }
 
 /*START HEADER SECTION*/
@@ -154,8 +158,12 @@ header{
 
 /*START MAIN SECTION*/
 
-main{
+.main-information{
     margin-top: 2rem;
+}
+
+.event-element{
+    padding: 1rem 0;
 }
 
 .skate-events img{
