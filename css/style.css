@@ -10,29 +10,58 @@ html{
 }
 
 body{
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: #000;
 }
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+.button{
+    font-size: 1.7rem;
+    padding: 0.7rem 1.5rem;
+    margin: 2rem 0;
+    border: 1.5px solid #000;
+}
+
+@keyframes buttonFill{
+    0%{
+        border-color: rgb(8, 243, 243);
+    }
+
+    33%{
+        border-color: rgb(71, 238, 30);
+    }
+
+    66%{
+        border-color: rgb(240, 240, 44);
+    }
 }
 
 /*START HEADER SECTION*/
 
 header{
     position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .vid-intro{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -5;
     background: #000;
-    z-index: -10;
 }
 
 .vid-header{
@@ -41,17 +70,134 @@ header{
     object-fit: cover;
 }
 
+.main-menu{
+    padding: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.main-menu>li>a{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem;
+    color: rgb(255, 255, 255);
+    transition: border 0.5s;
+}
+
+.main-menu>li>a:hover:not(.logo){
+    border: 0.1px solid #fff;   
+}
+
 .sub-navigation{
     display: none;
-    z-index: 10;
+    position: absolute;
+    top:8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    padding: 1.5rem 3rem;
+    z-index: 1;
+}
+
+.sub-menu a{
+    color:#fff;
 }
 
 .main-menu li:nth-child(2):hover .sub-navigation{
-    color:red;
     display: block;
+    background: rgba(0, 0, 0, 0.9)
 }
 
+.sub-menu li:first-child{
+    font-size: 1.8rem;
+    padding: 1rem 0 0.3rem 0;
+}
 
+.header-info{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);   
+    padding: 1rem;
+}
 
+.header-info h1{
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+}
+
+.header-info p{
+    margin: 1rem 0rem;
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.header-info a{
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+.header-info a:hover{
+    animation: buttonFill 4s ease-in infinite;
+}
 
 /*END HEADER SECTION*/
+
+
+/*START MAIN SECTION*/
+
+main{
+    margin-top: 2rem;
+}
+
+.skate-events img{
+    height: 100%;
+    width: 100%;
+}
+
+.event-content{
+    height: 100%;
+    text-align: center;
+}
+
+.title-content{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+.event-content p{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.event-content a{
+    color: #000;
+}
+
+.event-content a:hover{
+    animation: buttonFill 4s ease-in infinite;
+}
+
+/*END MAIN SECTION*/
+
+/*START FOOTER SECTION*/
+
+footer{
+    margin-top: 2rem;
+    background: #111111;
+}
+
+footer ul{
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+}
+
+footer li{
+    margin: 0.5rem 0;
+}
+
+footer a{
+    color: #fff;
+}
+
+/*END FOOTER SECTION*/

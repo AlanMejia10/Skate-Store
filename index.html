@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="vendors/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Skate</title>
 </head>
@@ -16,18 +17,18 @@
     <header>
         <div class="vid-intro">
             <video autoplay muted loop class="vid-header">
-                <source src="img/intro.mp4" type="video/mp4">
+                <source src="img/intro-2.mp4" type="video/mp4">
             </video>
         </div>
 
         <div class="navigation">
-            <ul class="main-menu">
-                <li><a href="index.html">THUNDERLIGHT</a></li>
+            <ul class="main-menu d-flex justify-content-start">
+                <li><a class="logo" href="index.html">THUNDERLIGHT</a></li>
                 <li>
                     <a href="#">MAN</a>
-                    <div class="container">
+                    <div class="container-fluid sub-navigation">
                         <div class="row">
-                            <div class="sub-navigation col-md-4">
+                            <div class="col-md-4">
                                 <ul class="sub-menu">
                                     <li><a href="#">CLOTHING</a></li>
                                     <li><a href="#">Shirts & Polos</a></li>
@@ -38,17 +39,16 @@
                                 </ul>
                             </div>
 
-                            <div class="sub-navigation col-md-4">
+                            <div class="col-md-4">
                                 <ul class="sub-menu">
                                     <li><a href="#">ACCESSORIES</a></li>
                                     <li><a href="#">Hats & Beanies</a></li>
                                     <li><a href="#">Bags & Backpacks</a></li>
                                     <li><a href="#">Other Accessories</a></li>
-
                                 </ul>
                             </div>
 
-                            <div class="sub-navigation col-md-4">
+                            <div class="col-md-4">
                                 <ul class="sub-menu">
                                     <li><a href="#">SHOES</a></li>
                                     <li><a href="#">Skate</a></li>
@@ -56,18 +56,19 @@
                                     <li><a href="#">Sandals</a></li>
                                     <li><a href="#">Shoe Care Products</a></li>
                                 </ul>
-                                <div class="row">
-                                    <div class="sub-navigation col-md-4">
-                                        <ul class="sub-menu">
-                                            <li><a href="#">SKATEBOARDS</a></li>
-                                            <li><a href="#">Custom Completes</a></li>
-                                            <li><a href="#">Wheels</a></li>
-                                            <li><a href="#">Decks</a></li>
-                                            <li><a href="#">Trucks</a></li>
-                                            <li><a href="#">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="sub-menu">
+                                    <li><a href="#">SKATEBOARDS</a></li>
+                                    <li><a href="#">Custom Completes</a></li>
+                                    <li><a href="#">Wheels</a></li>
+                                    <li><a href="#">Decks</a></li>
+                                    <li><a href="#">Trucks</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -76,8 +77,73 @@
                 <li><a href="#">COLLECTION</a></li>
             </ul>
         </div>
+
+        <div class="header-info">
+            <h1>DON'T LET ANYTHING STOP YOU</h1>
+            <p>Check out our new legends collection</p>
+            <a class="button" href="#">Go to collection</a>
+        </div>
     </header>
     <!--END HEADER SECTION-->
+
+    <!--START MAIN SECTION-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skate-events">
+                        <img src="img/skate-park.jpg" alt="skate-park">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="event-content d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="title-content">Red Bull Roller Coaster</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, cum, facilis fugiat, ea
+                            eveniet qui blanditiis esse placeat omnis est hic odit assumenda iusto tenetur totam vero
+                            sed? Exercitationem, amet?Tempora dolores reprehenderit nisi. Accusamus ullam laboriosam
+                            praesentium tenetur a quae odio qui, culpa error in blanditiis quaerat.
+                        </p>
+                        <a class="button" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--END MAIN SECTION-->
+
+    <!--START FOOTER SECTION-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">TIENDAS MÁS CERCANAS</a></li>
+                        <li><a href="">UNETE AL EQUIPO DE THUNDERLIGHT</a></li>
+                        <li><a href="">COMENTARIOS SOBRE EL SITIO</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">OBTENER AYUDA</a></li>
+                        <li><a href="#">Estado del pedido</a></li>
+                        <li><a href="#">Envío y entrega</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Opciones de pago</a></li>
+                        <li><a href="#">Comunícate con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="#">SOBRE THUNDERLIGHT</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Inversores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER SECTION-->
 
 </body>
 
